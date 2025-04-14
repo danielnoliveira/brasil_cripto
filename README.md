@@ -1,17 +1,22 @@
-# brasil_cripto
+# BrasilCripto
 
-A new Flutter project.
+Este é um projeto Flutter desenvolvido como parte de um teste técnico. O aplicativo utiliza variáveis de ambiente, que devem ser configuradas antes da execução.
 
-## Getting Started
+## 📦 Requisitos
 
-This project is a starting point for a Flutter application.
+- **Flutter**: 3.27.0
 
-A few resources to get you started if this is your first Flutter project:
+## ⚙️ Configuração do ambiente
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Antes de executar o projeto, é necessário criar um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# brasil_cripto
+```env
+COINGECKO_API_KEY=_coingecko_api_key_
+COINGECKO_API_URL=https://api.coingecko.com/api/v3/
+```
+
+E também executar o comando:
+```
+flutter pub run build_runner build --delete-conflicting-outputs
+```
+antes de executar a aplicaçao
